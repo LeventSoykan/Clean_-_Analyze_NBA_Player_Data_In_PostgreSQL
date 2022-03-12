@@ -1,0 +1,1637 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0818.1843                               -->
+<workbook original-version='18.1' source-build='2021.2.2 (20212.21.0818.1843)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='players+ (nbadb)' inline='true' name='federated.09bzums17dq1py19i0kns01xd4m8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.0qmmk010b9rgco1gnukcx15h7bvh'>
+            <connection authentication='username-password' class='postgres' dbname='nbadb' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0qmmk010b9rgco1gnukcx15h7bvh' name='players' table='[public].[players]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0qmmk010b9rgco1gnukcx15h7bvh' name='players' table='[public].[players]' type='table' />
+          <relation connection='postgres.0qmmk010b9rgco1gnukcx15h7bvh' name='seasons' table='[public].[seasons]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[2p]' value='[seasons].[2p]' />
+          <map key='[2p_pct]' value='[seasons].[2p_pct]' />
+          <map key='[2pa]' value='[seasons].[2pa]' />
+          <map key='[3p]' value='[seasons].[3p]' />
+          <map key='[3p_pct]' value='[seasons].[3p_pct]' />
+          <map key='[3pa]' value='[seasons].[3pa]' />
+          <map key='[3par]' value='[seasons].[3par]' />
+          <map key='[ast]' value='[seasons].[ast]' />
+          <map key='[ast_pct]' value='[seasons].[ast_pct]' />
+          <map key='[birth_date]' value='[players].[birth_date]' />
+          <map key='[blk]' value='[seasons].[blk]' />
+          <map key='[blk_pct]' value='[seasons].[blk_pct]' />
+          <map key='[bpm]' value='[seasons].[bpm]' />
+          <map key='[college]' value='[players].[college]' />
+          <map key='[dbpm]' value='[seasons].[dbpm]' />
+          <map key='[drb]' value='[seasons].[drb]' />
+          <map key='[drb_pct]' value='[seasons].[drb_pct]' />
+          <map key='[dws]' value='[seasons].[dws]' />
+          <map key='[efg_pct]' value='[seasons].[efg_pct]' />
+          <map key='[fg]' value='[seasons].[fg]' />
+          <map key='[fg_pct]' value='[seasons].[fg_pct]' />
+          <map key='[fga]' value='[seasons].[fga]' />
+          <map key='[ft]' value='[seasons].[ft]' />
+          <map key='[ft_pct]' value='[seasons].[ft_pct]' />
+          <map key='[fta]' value='[seasons].[fta]' />
+          <map key='[ftr]' value='[seasons].[ftr]' />
+          <map key='[g]' value='[seasons].[g]' />
+          <map key='[gs]' value='[seasons].[gs]' />
+          <map key='[height]' value='[players].[height]' />
+          <map key='[id (seasons)]' value='[seasons].[id]' />
+          <map key='[id]' value='[players].[id]' />
+          <map key='[mp]' value='[seasons].[mp]' />
+          <map key='[name]' value='[players].[name]' />
+          <map key='[obpm]' value='[seasons].[obpm]' />
+          <map key='[orb]' value='[seasons].[orb]' />
+          <map key='[orb_pct]' value='[seasons].[orb_pct]' />
+          <map key='[ows]' value='[seasons].[ows]' />
+          <map key='[per]' value='[seasons].[per]' />
+          <map key='[pf]' value='[seasons].[pf]' />
+          <map key='[player_id]' value='[seasons].[player_id]' />
+          <map key='[pos]' value='[seasons].[pos]' />
+          <map key='[position]' value='[players].[position]' />
+          <map key='[pts]' value='[seasons].[pts]' />
+          <map key='[stl]' value='[seasons].[stl]' />
+          <map key='[stl_pct]' value='[seasons].[stl_pct]' />
+          <map key='[tm]' value='[seasons].[tm]' />
+          <map key='[tov]' value='[seasons].[tov]' />
+          <map key='[tov_pct]' value='[seasons].[tov_pct]' />
+          <map key='[trb]' value='[seasons].[trb]' />
+          <map key='[trb_pct]' value='[seasons].[trb_pct]' />
+          <map key='[ts_pct]' value='[seasons].[ts_pct]' />
+          <map key='[usg_pct]' value='[seasons].[usg_pct]' />
+          <map key='[vorp]' value='[seasons].[vorp]' />
+          <map key='[weight]' value='[players].[weight]' />
+          <map key='[ws/48]' value='[seasons].[ws/48]' />
+          <map key='[ws]' value='[seasons].[ws]' />
+          <map key='[year]' value='[seasons].[year]' />
+          <map key='[year_end]' value='[players].[year_end]' />
+          <map key='[year_start]' value='[players].[year_start]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_start</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_start]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>year_start</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_end</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_end]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>year_end</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[birth_date]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>birth_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>college</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[college]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>college</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[players]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[players_67091FB378EE4B47A944F2979CC0DF81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pos]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>pos</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tm]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>tm</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>g</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[g]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>g</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gs]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>gs</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mp]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>mp</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>per</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[per]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>per</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ts_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ts_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ts_pct</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3par</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3par]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>3par</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ftr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ftr]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ftr</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orb_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orb_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>orb_pct</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drb_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drb_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>drb_pct</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trb_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trb_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>trb_pct</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ast_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ast_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ast_pct</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stl_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stl_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>stl_pct</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blk_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[blk_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>blk_pct</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tov_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tov_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>tov_pct</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usg_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[usg_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>usg_pct</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ows</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ows]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ows</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dws</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dws]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>dws</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ws</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ws]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ws</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ws/48</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ws/48]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ws/48</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>obpm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[obpm]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>obpm</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dbpm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dbpm]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>dbpm</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bpm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bpm]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>bpm</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vorp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vorp]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>vorp</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fg]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>fg</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fga</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fga]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>fga</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fg_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fg_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>fg_pct</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3p</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3p]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>3p</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3pa</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3pa]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>3pa</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3p_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3p_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>3p_pct</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2p</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2p]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>2p</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2pa</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2pa]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>2pa</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2p_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2p_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>2p_pct</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>efg_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[efg_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>efg_pct</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ft</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ft]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ft</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fta]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>fta</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ft_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ft_pct]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ft_pct</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orb]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>orb</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drb]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>drb</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trb]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>trb</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ast</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ast]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>ast</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stl]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>stl</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[blk]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>blk</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tov</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tov]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>tov</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pf</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pf]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>pf</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pts]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>pts</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (seasons)]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[seasons]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[seasons_F463BB24E7154E41A05FB994C7BFCF51]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2P' datatype='real' name='[2p]' role='measure' type='quantitative' />
+      <column caption='2P Pct' datatype='real' name='[2p_pct]' role='measure' type='quantitative' />
+      <column caption='2Pa' datatype='real' name='[2pa]' role='measure' type='quantitative' />
+      <column caption='3P' datatype='real' name='[3p]' role='measure' type='quantitative' />
+      <column caption='3P Pct' datatype='real' name='[3p_pct]' role='measure' type='quantitative' />
+      <column caption='3Pa' datatype='real' name='[3pa]' role='measure' type='quantitative' />
+      <column caption='3Par' datatype='real' name='[3par]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='players' datatype='table' name='[__tableau_internal_object_id__].[players_67091FB378EE4B47A944F2979CC0DF81]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='seasons' datatype='table' name='[__tableau_internal_object_id__].[seasons_F463BB24E7154E41A05FB994C7BFCF51]' role='measure' type='quantitative' />
+      <column caption='Ast' datatype='real' name='[ast]' role='measure' type='quantitative' />
+      <column caption='Ast Pct' datatype='real' name='[ast_pct]' role='measure' type='quantitative' />
+      <column caption='Birth Date' datatype='date' name='[birth_date]' role='dimension' type='ordinal' />
+      <column caption='Blk' datatype='real' name='[blk]' role='measure' type='quantitative' />
+      <column caption='Blk Pct' datatype='real' name='[blk_pct]' role='measure' type='quantitative' />
+      <column caption='Bpm' datatype='real' name='[bpm]' role='measure' type='quantitative' />
+      <column caption='College' datatype='string' name='[college]' role='dimension' type='nominal' />
+      <column caption='Dbpm' datatype='real' name='[dbpm]' role='measure' type='quantitative' />
+      <column caption='Drb' datatype='real' name='[drb]' role='measure' type='quantitative' />
+      <column caption='Drb Pct' datatype='real' name='[drb_pct]' role='measure' type='quantitative' />
+      <column caption='Dws' datatype='real' name='[dws]' role='measure' type='quantitative' />
+      <column caption='Efg Pct' datatype='real' name='[efg_pct]' role='measure' type='quantitative' />
+      <column caption='Fg' datatype='real' name='[fg]' role='measure' type='quantitative' />
+      <column caption='Fg Pct' datatype='real' name='[fg_pct]' role='measure' type='quantitative' />
+      <column caption='Fga' datatype='real' name='[fga]' role='measure' type='quantitative' />
+      <column caption='Ft' datatype='real' name='[ft]' role='measure' type='quantitative' />
+      <column caption='Ft Pct' datatype='real' name='[ft_pct]' role='measure' type='quantitative' />
+      <column caption='Fta' datatype='real' name='[fta]' role='measure' type='quantitative' />
+      <column caption='Ftr' datatype='real' name='[ftr]' role='measure' type='quantitative' />
+      <column caption='G' datatype='real' name='[g]' role='measure' type='quantitative' />
+      <column caption='Gs' datatype='real' name='[gs]' role='measure' type='quantitative' />
+      <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+      <column caption='Id (Seasons)' datatype='integer' name='[id (seasons)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Mp' datatype='real' name='[mp]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Obpm' datatype='real' name='[obpm]' role='measure' type='quantitative' />
+      <column caption='Orb' datatype='real' name='[orb]' role='measure' type='quantitative' />
+      <column caption='Orb Pct' datatype='real' name='[orb_pct]' role='measure' type='quantitative' />
+      <column caption='Ows' datatype='real' name='[ows]' role='measure' type='quantitative' />
+      <column caption='Per' datatype='real' name='[per]' role='measure' type='quantitative' />
+      <column caption='Pf' datatype='real' name='[pf]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Player Id' datatype='integer' name='[player_id]' role='dimension' type='ordinal' />
+      <column caption='Pos' datatype='string' name='[pos]' role='dimension' type='nominal' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Pts' datatype='real' name='[pts]' role='measure' type='quantitative' />
+      <column caption='Stl' datatype='real' name='[stl]' role='measure' type='quantitative' />
+      <column caption='Stl Pct' datatype='real' name='[stl_pct]' role='measure' type='quantitative' />
+      <column caption='Tm' datatype='string' name='[tm]' role='dimension' type='nominal' />
+      <column caption='Tov' datatype='real' name='[tov]' role='measure' type='quantitative' />
+      <column caption='Tov Pct' datatype='real' name='[tov_pct]' role='measure' type='quantitative' />
+      <column caption='Trb' datatype='real' name='[trb]' role='measure' type='quantitative' />
+      <column caption='Trb Pct' datatype='real' name='[trb_pct]' role='measure' type='quantitative' />
+      <column caption='Ts Pct' datatype='real' name='[ts_pct]' role='measure' type='quantitative' />
+      <column caption='Usg Pct' datatype='real' name='[usg_pct]' role='measure' type='quantitative' />
+      <column caption='Vorp' datatype='real' name='[vorp]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+      <column caption='Ws/48' datatype='real' name='[ws/48]' role='measure' type='quantitative' />
+      <column caption='Ws' datatype='real' name='[ws]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='real' name='[year]' role='dimension' type='ordinal' />
+      <column caption='Year End' datatype='integer' name='[year_end]' role='dimension' type='quantitative' />
+      <column caption='Year Start' datatype='integer' name='[year_start]' role='dimension' type='quantitative' />
+      <column-instance column='[height]' derivation='Avg' name='[avg:height:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weight]' derivation='Avg' name='[avg:weight:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pos]' derivation='None' name='[none:pos:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09bzums17dq1py19i0kns01xd4m8].[avg:height:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09bzums17dq1py19i0kns01xd4m8].[avg:weight:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:pos:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;C&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;G-F&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;SG&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PG&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;F-C&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;PF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;SF&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='players' id='players_67091FB378EE4B47A944F2979CC0DF81'>
+            <properties context=''>
+              <relation connection='postgres.0qmmk010b9rgco1gnukcx15h7bvh' name='players' table='[public].[players]' type='table' />
+            </properties>
+          </object>
+          <object caption='seasons' id='seasons_F463BB24E7154E41A05FB994C7BFCF51'>
+            <properties context=''>
+              <relation connection='postgres.0qmmk010b9rgco1gnukcx15h7bvh' name='seasons' table='[public].[seasons]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[player_id]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='players_67091FB378EE4B47A944F2979CC0DF81' unique-key='true' />
+            <second-end-point guaranteed-value='true' object-id='seasons_F463BB24E7154E41A05FB994C7BFCF51' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_20E38EDC9A504BF8BF3559926DAEAE60]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='height_over_seasons' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='height_over_seasons' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_28C5B2B4104B4FC1AE3281DFD911CF39]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='height_over_seasons'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg_Height&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='players+ (nbadb)' name='federated.09bzums17dq1py19i0kns01xd4m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09bzums17dq1py19i0kns01xd4m8'>
+            <column-instance column='[height]' derivation='Avg' name='[avg:height:qk]' pivot='key' type='quantitative' />
+            <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+            <column-instance column='[pos]' derivation='None' name='[none:pos:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Pos' datatype='string' name='[pos]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='real' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:pos:nk]' member='&quot;C&quot;' />
+              <groupfilter function='member' level='[none:pos:nk]' member='&quot;PF&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:year:ok]' member='1955.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='1970.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='1985.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='1995.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='2005.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='2013.0' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]</column>
+            <column>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09bzums17dq1py19i0kns01xd4m8].[avg:height:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09bzums17dq1py19i0kns01xd4m8].[avg:height:qk]</rows>
+        <cols>([federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok] / [federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk])</cols>
+      </table>
+      <simple-id uuid='{3F2AD411-AAA7-4381-ABD8-003DDD3C23DA}' />
+    </worksheet>
+    <worksheet name='weight_over_seasons'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg_Weight</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='players+ (nbadb)' name='federated.09bzums17dq1py19i0kns01xd4m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09bzums17dq1py19i0kns01xd4m8'>
+            <column-instance column='[weight]' derivation='Avg' name='[avg:weight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pos]' derivation='None' name='[none:pos:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Pos' datatype='string' name='[pos]' role='dimension' type='nominal' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='real' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:pos:nk]' member='&quot;C&quot;' />
+              <groupfilter function='member' level='[none:pos:nk]' member='&quot;PG&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:year:ok]' member='1955.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='1970.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='1985.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='1995.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='2005.0' />
+              <groupfilter function='member' level='[none:year:ok]' member='2013.0' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]</column>
+            <column>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09bzums17dq1py19i0kns01xd4m8].[avg:weight:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09bzums17dq1py19i0kns01xd4m8].[avg:weight:qk]</rows>
+        <cols>([federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok] / [federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk])</cols>
+      </table>
+      <simple-id uuid='{3D705E1E-E71A-4DE2-8FF5-6784A5A95740}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='300' maxwidth='1000' minheight='300' minwidth='1000' preset-index='11' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94666' id='7' param='horz' type-v2='layout-flow' w='37904' x='800' y='2667'>
+            <zone h='94666' id='5' type-v2='layout-basic' w='37904' x='800' y='2667'>
+              <zone h='94666' id='3' name='height_over_seasons' w='37904' x='800' y='2667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='94666' id='9' name='weight_over_seasons' w='40749' x='38704' y='2667'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='94666' id='10' type-v2='layout-flow' w='19747' x='79453' y='2667'>
+            <zone h='24000' id='8' name='height_over_seasons' pane-specification-id='0' param='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' type-v2='color' w='19747' x='79453' y='2667'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='94666' id='11' param='vert' type-v2='layout-flow' w='98400' x='800' y='2667'>
+                <zone fixed-size='276' h='94666' id='3' is-fixed='true' name='height_over_seasons' w='37904' x='800' y='2667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='24000' id='8' name='height_over_seasons' pane-specification-id='0' param='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' type-v2='color' w='19747' x='79453' y='2667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='94666' id='9' is-fixed='true' name='weight_over_seasons' w='40749' x='38704' y='2667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B0032F3C-8A8C-4619-8033-987E88E49C8B}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='height_over_seasons'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.09bzums17dq1py19i0kns01xd4m8].[avg:height:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</field>
+            <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0E61A12C-498E-4980-BB56-B804C2BBAC68}' />
+    </window>
+    <window class='worksheet' name='weight_over_seasons'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]</field>
+                    <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09bzums17dq1py19i0kns01xd4m8].[avg:weight:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09bzums17dq1py19i0kns01xd4m8].[avg:weight:qk]</field>
+                  <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</field>
+                  <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>114.62037037037037</value>
+                <value>&quot;C&quot;</value>
+                <value>2005.0</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</field>
+            <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{591B2BC4-DB25-4067-9A82-439E578F6600}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='height_over_seasons'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.09bzums17dq1py19i0kns01xd4m8].[none:pos:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='weight_over_seasons'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B34DE097-A397-41D5-A4C5-DDA3FEC2B9B0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      /SQnJ4894n0wODiI2+2++ihYcefu5XKVLtAEkS5Q/KQLJMQ9IgEQpiYBEKYmARCmZp7L/+8T
+      Tdc5dLZ97BFHkZniYnpxdoIrutHzf/WvcU03d0oe3/vjlQmu5kY1Zy7xv9+sjmvaF5+ez+ML
+      xt6RfiACYBgG4Wh8N4C1qAo268T9UhON6fzot1VxTbtk5mS+86UVCa7oRvF+btHYxN9wVx/H
+      ctXu8HrsByIA/YEwX/7+u3FNu/qREr79/NIEVyQ+bQwtSPjKrpuG33EAfvXeEZo77/5iZZtV
+      5eWvPXbX04nRacFLDDb9NK5p7dnrcOY+meCKrtHCXQxe/Pu4prVnrcI5aVOCK7pGjw0QaP7Z
+      TcPvOADNnV7ONPfc9Rs7bHIgKJEMPUjMfzquaa0psxNczSfo4bhrsyRNTXAxd+aB6AIlWizQ
+      BEYc59QrdqzuksQXJCbMmAGIRqOEQqG4b/JkAKFQ6Kbhes+bGPrNw8ei2LJQM58aakPXCYVC
+      RMLxX3ata/pN9QXr/wojevdbO8UxGdf0oc2spmmEw2GiWvzXjum6dlNt+jie2qlpN7cXr5HP
+      /npGgmobaTsajcbdXjQWu6E+IxoedbwxA2C1WrHb7XGfX64w+lMmfT0fYsT677o9i3sKKXnP
+      AkOXt9ntdmzjuABqpI3rhRTiuuRRUZSrbVksFux2O8o4AjBabVrMRrxf4ZGaEmG02nTdRrz3
+      9bi+tpG2rdb4L+yxWqw31KdjH7W2MQOgKAqqqsI4zmpU1cQeb7u+PVVVx1MaKImt7/q2FEUZ
+      X20oN9Wmj/Ps0omaVwAjgbWNd7kqn1iut6pNjgQLU5MACFOTAAhTkwAIU5MACFOTAAhTkwAI
+      U5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOT
+      AAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAI
+      U5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOT
+      AAhTkwAIU7OONYJhGOi6DoYR95vouh73tGO1p+v6eEoDI7H1Xd+WYRgY4yzuk7WNr72Jm1dI
+      bG3jXa6GcfOyGM2YAYjFYkQiEfQ4qzGASCQyaoFxtWcYV9vTdZ1IJEJ0lPbv1Egbia5N07Sh
+      2rTxrTg+WZsejcbd3khNiTDq55ag2kbajsXiby+mxW6oz4iOPt9jBsBms+F0OlHV+HpLCuB0
+      Om8aHlSGwnHX7SnK1fZUVcXpdBLW4iptqA2LelN9oQTUZrFYcDgcqOMIgKpabqotptkJxdme
+      xXJze/Ea+eyvpxl2gnG2d31tI23bbLa467NZrTfUpymOUWuTfQBhahIAYWoSAGFqEgBhahIA
+      YWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFq
+      EgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIA
+      YWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFq
+      EgBhahIAYWoSAGFqEgBhahIAYWoSAGFqimEYxq1e9Pv9dHd3AxCN6ei3HvW2HDbLzQP1MPG0
+      pqCAagfAMAwURQEgHNXiqs2iKlgtn1gP6BGMOKpLdG2qqmD7ZG0YGHokrvYUxQKK9YZhcdem
+      KNisE1PbyGenGwbRmB5Xe1aLikVVxqzttgEQ4kEnXSBhahIAYWoSAGFqEgBhahIAYWoSAGFq
+      EgBhav8fsxcLya2kPa4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='height_over_seasons' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='weight_over_seasons' width='192'>
+      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
+      hPCooD7WWgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
